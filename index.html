@@ -9,8 +9,19 @@
   <body>
     <script src="script.js"></script>
     <h1>Astronauts</h1>
+    div.innerHTML = `
     <div id="container">
-        <!-- List of astronauts will be added here dynamically -->
+      <div class="astronaut">
+        <div class="bio">
+           <h3>${json.firstName} ${json.lastName}</h3>
+           <ul>
+              <li>Hours in space: ${json.hoursInSpace}</li>
+              <li>Active: ${json.active}</li>
+              <li>Skills: ${json.skills}</li>
+           </ul> `
+        </div>
+        <img class="avatar" src="images/mae-jemison.jpg">
+     </div>
     </div>
   </body>
 </html>
